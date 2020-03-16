@@ -1,0 +1,22 @@
+{
+    "name": "react-snippets-no-semi-colons",
+    "displayName": "react-snippets-no-semi-colons",
+    "description": "A collection of useful and fruitful vscode snippets for react and react-native development (no semi-colons)",
+    "version": "0.0.1",
+    "publisher": "VascoSilva",
+    "icon": "images/logo.png",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

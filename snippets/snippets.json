@@ -1,0 +1,167 @@
+{
+  "{ input }": {
+    "prefix": "rcb",
+    "body": "{ ${1} }",
+    "description": "{ input }"
+  },
+  "{ input } (hit tab when rcb shows)": {
+    "prefix": "cc",
+    "body": "rcb",
+    "description": "{ input } (hit tab when rcb shows)"
+  },
+  "stateless functional component": {
+    "prefix": "rfc",
+    "body": "import React from 'react'\nimport { $2 } from 'prop-types'\n\nconst ${1:MyComponent} = () => {\n  return (\n\n  )\n}\n\n${1:MyComponent}.propTypes = {\n  $3\n}\n\n${1:MyComponent}.defaultProps = {\n  $4\n}\n\n${1:MyComponent}.displayName = '${1:MyComponent}'\n\nexport default ${1:MyComponent}",
+    "description": "stateless functional component"
+  },
+  "stateless functional component, without props (cleaner)": {
+    "prefix": "rfcc",
+    "body": "import React from 'react'\n\nconst ${1:MyComponent} = () => {\n  return (\n\n  )\n}\n\n${1:MyComponent}.displayName = '${1:MyComponent}'\n\nexport default ${1:MyComponent}",
+    "description": "stateless functional component, without props (cleaner)"
+  },
+  "classful component": {
+    "prefix": "rcc",
+    "body": "import React, { Component } from 'react'\nimport { $2 } from 'prop-types'\n\nclass ${1:MyComponent} extends Component {\n  static propTypes = {\n    ${3}\n  }\n\n  static defaultProps = {\n    ${4}\n  }\n\n  state = {}\n\n  render() {\n    return (\n\n    )\n  }\n}\n\nexport default ${1:MyComponent}",
+    "description": "classful component"
+  },
+  "classful component without proptypes (more clean)": {
+    "prefix": "rccc",
+    "body": "import React, { Component } from 'react'\n\nclass ${1:MyComponent} extends Component {\n  state = {}\n\n  render() {\n    return (\n\n    )\n  }\n}\n\nexport default ${1:MyComponent}",
+    "description": "classful component without proptypes (more clean)"
+  },
+  "component will mount": {
+    "prefix": "rwm",
+    "body": "componentWillMount() {\n  ${1}\n}",
+    "description": "component will mount"
+  },
+  "component did mount": {
+    "prefix": "rdm",
+    "body": "componentDidMount() {\n  ${1}\n}",
+    "description": "component did mount"
+  },
+  "component will update": {
+    "prefix": "rwu",
+    "body": "componentWillUpdate() {\n  ${1}\n}",
+    "description": "component will update"
+  },
+  "component did update": {
+    "prefix": "rdu",
+    "body": "componentDidUpdate() {\n  ${1}\n}",
+    "description": "component did update"
+  },
+  "component will receive props": {
+    "prefix": "rwr",
+    "body": "componentWillReceiveProps(nextProps) {\n  ${1}\n}",
+    "description": "component will receive props"
+  },
+  "component should update": {
+    "prefix": "rsw",
+    "body": "shouldComponentUpdate(nextProps, nextState) {\n  ${1}\n}",
+    "description": "component should update"
+  },
+  "component constructor": {
+    "prefix": "rcon",
+    "body": "constructor(props) {\n  super(props)\n\n  const { $1 } = props\n\n  this.state = { $2 }\n}",
+    "description": "component constructor"
+  },
+  "import statement with curly braces": {
+    "prefix": "rim",
+    "body": "import { $1 } from '${2}'",
+    "description": "import statement with curly braces"
+  },
+  "import statement without curly braces": {
+    "prefix": "ri",
+    "body": "import $1 from '${2}'",
+    "description": "import statement without curly braces"
+  },
+  "import ReactDom statement": {
+    "prefix": "rid",
+    "body": "import ReactDom from 'react-dom'",
+    "description": "import ReactDom statement"
+  },
+  "import React Native statement": {
+    "prefix": "rin",
+    "body": "import { $1 } from 'react-native'",
+    "description": "import React Native statement"
+  },
+  "import PropTypes": {
+    "prefix": "rip",
+    "body": "import PropTypes from 'prop-types'",
+    "description": "import PropTypes"
+  },
+  "import PropTypes, with destructuring": {
+    "prefix": "ripd",
+    "body": "import { $1 } from 'prop-types'",
+    "description": "import PropTypes, with destructuring"
+  },
+  "import styled-components": {
+    "prefix": "ris",
+    "body": "import styled from 'styled-components'",
+    "description": "import styled-components"
+  },
+  "react this.props": {
+    "prefix": "rtp",
+    "body": "this.props.${1}",
+    "description": "react this.props"
+  },
+  "react Component.propTypes": {
+    "prefix": "rpt",
+    "body": "${1:MyComponent}.propTypes = {\n  ${2}\n}",
+    "description": "react Component.propTypes"
+  },
+  "react Component.defaultProps": {
+    "prefix": "rdpt",
+    "body": "${1:MyComponent}.defaultProps = {\n  ${2}\n}",
+    "description": "react Component.defaultProps"
+  },
+  "react this.state": {
+    "prefix": "rts",
+    "body": "this.state.${1}",
+    "description": "react this.state"
+  },
+  "react setState": {
+    "prefix": "rsst",
+    "body": "this.setState($1)",
+    "description": "react setState"
+  },
+  "const styles object": {
+    "prefix": "rst",
+    "body": "const styles = {\n  ${1:key}: {\n    ${2}\n  },\n}",
+    "description": "const styles object"
+  },
+  "const styled component": {
+    "prefix": "rsc",
+    "body": "const ${1:StyledComponent} = styled.${2:tag}`\n  ${3:key}: ${4:value};\n`",
+    "description": "const styled component"
+  },
+  "destructuring of styles": {
+    "prefix": "rdst",
+    "body": "const { $1 } = styles",
+    "description": "destructuring of styles"
+  },
+  "destructuring of state": {
+    "prefix": "rds",
+    "body": "const { $1 } = this.state",
+    "description": "destructuring of state"
+  },
+  "destructuring of props": {
+    "prefix": "rdp",
+    "body": "const { $1 } = this.props",
+    "description": "destructuring of props"
+  },
+  "long comment for documentation": {
+    "prefix": "/**",
+    "body": "/**\n* ${1:comment}\n*/",
+    "description": "long comment for documentation"
+  },
+  "redux action's constant declaration": {
+    "prefix": "rxac",
+    "body": "export const ${1:CONSTANT_NAME} = '$1'",
+    "description": "redux action's constant declaration"
+  },
+  "redux: mapStateToProps": {
+    "prefix": "rxmsp",
+    "body": "const mapStateToProps = (state) => {\n  const { $1 } = state\n\n  return { $2 }\n}",
+    "description": "redux: mapStateToProps"
+  }
+}
