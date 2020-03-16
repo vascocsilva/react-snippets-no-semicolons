@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "publisher": "VascoSilva",
     "icon": "images/logo.png",
+    "repository": "https://github.com/vascocsilva/react-snippets-no-semicolons.git",
     "engines": {
         "vscode": "^1.43.0"
     },
