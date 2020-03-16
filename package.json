@@ -2,20 +2,20 @@
     "name": "react-snippets-no-semi-colons",
     "displayName": "react-snippets-no-semi-colons",
     "description": "A collection of useful and fruitful vscode snippets for react and react-native development (no semi-colons)",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "VascoSilva",
     "icon": "images/logo.png",
     "repository": "https://github.com/vascocsilva/react-snippets-no-semicolons.git",
     "tags": [
-      "react",
-      "react-native",
-      "snippets",
-      "js",
-      "styled-components",
-      "no-semi-colons",
-      "es6",
-      "babel",
-      "es7"
+        "react",
+        "react-native",
+        "snippets",
+        "js",
+        "styled-components",
+        "no-semi-colons",
+        "es6",
+        "babel",
+        "es7"
     ],
     "engines": {
         "vscode": "^1.43.0"
