@@ -6,16 +6,12 @@
     "publisher": "VascoSilva",
     "icon": "images/logo.png",
     "repository": "https://github.com/vascocsilva/react-snippets-no-semicolons.git",
-    "tags": [
+    "keywords": [
         "react",
         "react-native",
         "snippets",
         "js",
-        "styled-components",
-        "no-semi-colons",
-        "es6",
-        "babel",
-        "es7"
+        "styled-components"
     ],
     "engines": {
         "vscode": "^1.43.0"
